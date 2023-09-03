@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principala | COUNTin Passion SRL</title>
+    <link rel="icon" href="https://www.iconarchive.com/download/i48681/custom-icon-design/pretty-office-2/account.256.png">
+    <style>
+        div {text-align: center; background-color:rgba(128, 128, 128, 0.834);}
+        .contact {width: 30px; vertical-align: bottom;}
+        nav {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
+        nav span label {
+            cursor: pointer;
+            user-select: none;
+            color: red;
+            padding: 10px 70px;
+            background-color: rgb(203, 203, 203);
+            border-radius: 10px;
+        }
+        nav span label:hover {
+            background-color:thistle;
+        }
+        nav span label::after {
+            content: "▼";
+        }
+        nav span ul {
+            display: none;
+        }
+        nav span input {
+            display: none;
+        }
+        nav span input:checked+label+ul {
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            list-style: none;
+            padding-left: 0;
+            background-color:wheat;
+            border-radius: 10px;
+        }
+        nav span input:checked+label::after {
+            content: "▲";
+        }
+        span {
+            display: inline-block;
+            padding: 10px;
+        }
+        a {
+            text-decoration: none; 
+            color: red;
+            padding: 10px 20px;
+            background-color: rgb(203, 203, 203);
+            border-radius: 10px;
+        }
+        a:hover {
+            background-color:thistle;
+        }
+        li a {
+            color: rgb(103, 102, 102);
+            font-size: 16px;
+            line-height: 40px;
+            background-color: transparent;
+        }
+        li a:hover {
+            color:brown;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img width="110" src="Logo png.png" alt="logo_count">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img class="contact" src="phone-icon.png" alt="phone"> +373(69)663980 &nbsp; &nbsp;
+        <img class="contact" src="map-marker-icon.png" alt="adress"> Chisinau, str. Calea Iesilor 15 &nbsp; &nbsp;
+        <img class="contact" src="Clock-icon.png" alt="orar">Luni-Vineri: 9.00-16.00 &nbsp; &nbsp;
+        <img class="contact" src="mail-icon.png" alt="email">countinpassion@gmail.com &nbsp; &nbsp;
+        <button style="background-color: chocolate; font-size: 20px;">SOLICITA OFERTA</button>
+    </div>
+    <nav>
+        <span><a href="">Acasa</a></span>
+        <span>
+        <input type="checkbox" id="toggler">
+        <label for="toggler">Despre noi</label>
+        <ul>
+            <li><a href="">Cariera</a></li>
+            <li><a href="">Galerie foto</a></li>
+        </ul>
+        </span>
+        <span>
+        <input type="checkbox" id="toggler1">
+        <label for="toggler1">Servicii</label>
+        <ul>
+            <li><a href="">Evidenta contabila</a></li>
+            <li><a href="">Initierea afacerii</a></li>
+            <li><a href="">Consultanta fiscala</a></li>
+            <li><a href="">Evidenta resurse umane</a></li>
+            <li><a href="">Servicii de marketing</a></li>
+        </ul>
+        </span>
+        <span>
+        <input type="checkbox" id="toggler2">
+        <label for="toggler2">Preturi</label>
+        <ul>
+            <li><a href="">Pachete si preturi</a></li>
+            <li><a href="">Calculator</a></li>
+            <li><a href="">FAQ</a></li>
+        </ul>
+        </span>
+        <span><a href="">Calculator</a></span>
+        <span><a href="">Blog</a></span>
+        <span>
+        <input type="checkbox" id="toggler3">
+        <label for="toggler3">Angajare</label>
+        <ul>
+            <li><a href="">Locuri vacante</a></li>
+            <li><a href="">Concursuri active</a></li>
+            <li><a href="">Burse de studii</a></li>
+            <li><a href="">Stagii profesionale</a></li>
+        </ul>
+        </span>
+        <span><a href="">Contacte</a></span>
+    </nav>
+</body>
+</html>
